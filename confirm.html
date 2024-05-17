@@ -1,0 +1,167 @@
+<!-- Success message start -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    :root {
+        --DarkSlateGrey: hsl(234, 29%, 20%);
+        --CharcoalGrey: hsl(235, 18%, 26%);
+        --Grey: hsl(231, 7%, 60%);
+        --White: hsl(0, 0%, 100%);
+        --Tomato: hsl(4, 100%, 67%);
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr auto;
+        place-items: center;
+        background-color: var(--DarkSlateGrey);
+    }
+
+    div {
+        background-color: var(--White);
+        padding: 50px;
+        max-width: 350px;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    p {
+        font-size: 16px;
+        color: var(--DarkSlateGrey);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 20px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: var(--DarkSlateGrey);
+        transition: background-color 0.2s ease, color 0.2s ease;
+        margin-top: 25px;
+    }
+
+    button>a {
+        text-align: center;
+        color: var(--White);
+        text-decoration: none;
+
+
+    }
+
+    button:hover,
+    button:focus-visible {
+        background-color: var(--Tomato);
+        outline: none;
+        color: var(--Grey);
+    }
+
+    img {
+        margin-right: 85%;
+        margin-bottom: 20px;
+
+
+    }
+
+    span {
+        color: hsl(236, 67%, 5%);
+        font-weight: 600;
+    }
+
+    @media (min-width: 319px) and (max-width: 600px) {
+        body {
+            min-height: 100vh;
+            min-height: 100dvh;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr auto;
+            place-items: center;
+            background-color: var(--DarkSlateGrey);
+        }
+
+        div {
+            border-radius: 0;
+            padding: 20px;
+
+        }
+
+        img {
+            padding-top: 50%;
+
+        }
+
+        button {
+            margin-top: 150%;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--DarkSlateGrey);
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin: 10px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="card">
+        <img src="./assets/images/icon-success.svg " alt="icon-success" height="100%">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+            A confirmation email has been sent to <br /> <span>ash@loremcompany.com.</span>
+            Please open it and click <br /> the button inside to confirm your subscription.</p>
+        <button type="submit"> <a href="#">Dismiss message</a></button>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- Success message end -->
